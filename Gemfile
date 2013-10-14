@@ -33,7 +33,7 @@ gem "twitter-bootstrap-rails"
 gem 'kaminari'
 gem 'kaminari-bootstrap'
 gem 'factory_girl_rails'
-#gem 'rails_12factor', group: :production
+gem 'rails_12factor', group: :production
 
 
 group :development, :test do
