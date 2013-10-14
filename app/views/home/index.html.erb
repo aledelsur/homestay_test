@@ -1,0 +1,88 @@
+ <div class="index">
+  <div class="row">
+ 
+    <div class="large-4 columns">
+      <%= image_tag "homestay_logo.png", :class=>"index-logo"%>
+    </div>
+    <div class="large-8 columns">
+      <div class="panel">
+
+        <form method="get" action="/hosts/search" id="search_form">
+          <fieldset>
+
+            <div class="row">
+              <div class="large-4 columns check-in">
+                <label>Check in</label>
+                <input type="text" id="start_date" name="start_date" data-toggle="tooltip" data-placement="top" title="when do you arrive?">
+              </div>
+
+              <div class="large-4 columns check-out">
+                <label>Check out</label>
+                <input type="text" id="end_date" name="end_date" name="start_date" data-toggle="tooltip" data-placement="top" title="when do you leave?">
+              </div>
+
+              <div class="large-2 columns guests">
+              <label for="customDropdown1">Guests</label>
+              <select id="customDropdown1" class="medium" name="guests" data-toggle="tooltip" data-placement="top" title="How many people?">
+                <option id="1">1</option>
+                <option id="2">2</option>
+                <option id="3">3</option>
+                <option id="4">4</option>
+                <option id="5">5</option>
+                <option id="6">6</option>
+                <option id="7">7</option>
+              </select>        
+              </div>              
+            </div>
+
+            <input type="submit" value="Search" class="small button">
+
+          </fieldset>
+        </form>
+     </div>
+    </div>
+  </div>
+ 
+  <div class="row">
+    <div class="large-4 columns">
+      <div class="panel">
+        <p>
+          <%= image_tag "homestay_in1.jpg", :class=>"index-section-img" %>
+        </p>
+        <p>
+          Discover the soul of your destination with the help and knowledge of your host family. Forget empty apartments and sterile hotel rooms.
+        </p>        
+      </div>
+    </div>
+    <div class="large-4 columns">
+      <div class="panel">
+        <p>
+          <%= image_tag "homestay_in2.jpg", :class=>"index-section-img" %>
+        </p>
+        <p>
+          Stay in a home that has been vetted and approved by a local, on-the-ground partner. All our hosts are experienced homestay providers.
+        </p>        
+      </div>
+    </div>
+    <div class="large-4 columns">
+      <div class="panel">
+        <p>
+          <%= image_tag "homestay_in3.jpg", :class=>"index-section-img" %>
+        </p>
+        <p>
+          Don’t waste your money on expensive hotels, use it to explore unique experiences which give value alternative to a hotel or vacation rental.
+        </p>        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+<% @rooms.each do |room| %>
+  <div class="row">
+    <div class="large-10 columns">
+      <p><strong><%= room.first.name %></strong></p>
+      <p><%= room.first.address %></p>
+  		<% room.last.each do |r| %>
+				<div class="row">
+					<div class="small-2 large-12 columns">
+						<%= r.ref %> is available (<%= r.number_of_bookings %> booked, <%= r.number_of_free %> free out of <%= r.capacity %> total)
+						</br>
+					</div>
+				</div>
+			<% end %>
+
+    </div>
+  </div>
+  <hr />
+<% end %>
+
+<%= paginate @rooms %>

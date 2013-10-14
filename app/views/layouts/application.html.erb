@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HomestayTest</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => false %>
+  <%= javascript_include_tag "bootstrap-tooltip" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	
+	<%= render :partial => "top_bar" %>
+	
+	<%= yield %>
+
+	<%= render :partial => "footer" %>
+	<%= render :partial => "modals" %>
+</body>
+</html>

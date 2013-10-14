@@ -1,0 +1,53 @@
+@import "mixins";
+
+#ui-datepicker-div{width: 15%;}
+
+.tooltip{width: 200px;}
+
+.index{
+	margin-top: 2%;
+	.index-logo{margin-top: 10%;}
+	.row{
+		.large-8{
+			.panel{
+				#search_form{
+					.check-in, .check-out {float: left; width: 39%;}
+					.guests{float: left;}
+				}
+			}
+		}
+		.large-4{
+			.panel{
+				p{
+					font-size: 14px;
+					img{@include index_img_shadow;}
+				}
+			}
+		}
+		
+	}
+}
+
+.row .large-6{
+	.row{padding-bottom: 1%;}
+	.pagination{text-align: center;}
+}
+
+.row .large-6 .row:hover{
+   background-color: #E8E8E8;
+}
+.slide-img{@include results_img_shadow;}
+
+.row .large-12 .panel{
+  text-align: center;
+  h4 {text-decoration: underline;}
+}
+.modal .modal-body{
+  text-align: center;
+  img {margin-bottom: 5%;}
+  .modal-bold{font-weight: bold;}
+}
+
+footer{
+	font-size: 14px;
+}

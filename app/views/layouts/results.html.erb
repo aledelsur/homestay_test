@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HomestayTest</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => false %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <%= render :partial => "top_bar" %>
+
+  <div id="s3ShareIt">
+        
+  </div>
+ 
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="panel">
+        <h4>Search results between <%= @start_date %> and <%= @end_date %> for <%= mention_guests(@guests) %></h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- Nav Sidebar -->
+    <!-- This is source ordered to be pulled to the left on larger screens -->
+    <div class="large-3 columns ">
+      <div class="panel">
+        <a href="#"><%=link_to (image_tag "homestay_logo.png"), root_path%></a>
+          
+      </div>
+    </div>
+    
+    <div class="large-6 columns">
+ 
+      <%= yield %>
+ 
+    </div>
+ 
+    <!-- Right Sidebar -->
+    <!-- On small devices this column is hidden -->
+    <aside class="large-3 columns hide-for-small">
+      <div id="slider-right" class="slide-img">
+          <%= image_tag "homestay3.jpg" %>
+          <%= image_tag "homestay4.jpg" %>
+      </div>
+    </aside>
+ 
+  </div>
+
+  <%= render :partial => "footer" %>
+  <%= render :partial => "modals" %>
+
+</body>
+</html>
