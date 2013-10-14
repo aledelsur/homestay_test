@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20131014085054) do
     t.datetime "updated_at"
   end
 
-  add_index "room_reservations", ["room_ref"], name: "index_room_reservations_on_room_ref", using: :btree
+  add_index "room_reservations", ["room_ref"], name: "index_room_reservations_on_room_ref"
 
   create_table "rooms", force: true do |t|
     t.string   "ref"
@@ -49,6 +49,6 @@ ActiveRecord::Schema.define(version: 20131014085054) do
     t.datetime "updated_at"
   end
 
-  add_index "rooms", ["host_ref"], name: "index_rooms_on_host_ref", using: :btree
+  add_index "rooms", ["host_ref"], name: "index_rooms_on_host_ref"
 
 end
